@@ -1,0 +1,7 @@
+{
+  "name": "observing-nodejs",
+  "private": true,
+  "dependencies": {
+    "pino": "^4.8.1"
+  }
+}
