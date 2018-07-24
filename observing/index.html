@@ -95,7 +95,7 @@
           <h2 style="color: black">Monitoring</h2>
           <p>
             Monitoring Node.js applications is <br />
-            the domain of APM solutions.
+            a production concern...
           </p>
           <ul>
             <li>Security</li>
@@ -108,8 +108,9 @@
         <section>
           <h2 style="color: black">Monitoring</h2>
           <p>
-            Node.js core provides utility modules<br />
-            to support monitoring...
+            There are new Node.js core modules<br />
+            intended to help make monitoring<br />
+            easier in the future.
           </p>
           <ul>
             <li>async_hooks</li>
@@ -139,13 +140,15 @@ asyncHook.enable()
         <section>
           <h2 style="color:black">async_hooks</h2>
           <p>
-            A <b><i>handle</i></b> is a long-lived thing<br />
-            that has async activity over time.
+            Provides an <code>AsyncResource</code> class.<br/>
+            There are two kinds of resources:</p>
           </p>
-          <p>
-            A <b><i>request</i></b> is a short-lived request<br />
-            to do one asynchronous thing.
-          </p>
+          <ul>
+            <li>A <b><i>handle</i></b> is a long-lived thing<br />
+            that has async activity over time.</li>
+            <li>A <b><i>request</i></b> is a short-lived request<br />
+            to do one asynchronous thing.</li>
+            </ul>
         </section>
 
         <section>
@@ -251,7 +254,7 @@ setTimeout(() => client.NodeTracing.stop(), 10000).unref()
         </section>
         <section data-background="media/flamegraph.png"
                  style="text-align:center">
-          <h2 style="color:black">0x Flamegraphs</h2>
+          <h2 style="color:black">Clinic Flame Flamegraphs</h2>
           <br /><br /><br /><br/ ><br /><br /><br />
 <pre><code class="hlbash" data-trim contenteditable>
 $ npm i -g clinic
@@ -285,10 +288,6 @@ $ clinic bubbleprof -- node some.application.js
             what your application is doing<br />
             at a given point in time.
           </p>
-        </section>
-        <section data-background="media/profiling.jpg">
-          <h2 style="color: black">Profiling</h2>
-          <p>Demo...</p>
         </section>
       </section>
 
@@ -355,6 +354,8 @@ $ clinic bubbleprof -- node some.application.js
         </section>
       <section style="text-align: left;">
         <h1>Thank you.</h1>
+        <img src="media/nearform.png" style="border:0px; background: 0; box-shadow: none;"/>
+        <p>Come talk to us if you need help with your Node.js</p>
         <p data-markdown>
           - Twitter: [@jasnell](https://twitter.com/jasnell)
           - GitHub: [@jasnell](https://github.com/jasnell)
