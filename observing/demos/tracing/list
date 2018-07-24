@@ -1,0 +1,6 @@
+1. node --trace-event-categories node.bootstrap,node.vm,node.perf,v8 -pe "perf_hooks.performance.measure('node startup', 'nodeStart', 'bootstrapComplete')"
+
+
+2. node --trace-event-categories node.async_hooks promises.js
+
+
